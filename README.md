@@ -12,4 +12,7 @@ You can install this this library by:
 npm install ng-flash-messages --save
 ```
 
+See the live demo at:
+https://ameerthehacker.github.io/ng-flash-messages-demo/
+
 You can read more on this library here: https://www.npmjs.com/package/ng-flash-messages

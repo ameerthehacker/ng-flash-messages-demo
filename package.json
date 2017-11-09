@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ngh": "ng build -prod --base-href 'https://ameerthehacker.github.io/ng-flash-messages-demo/'; ngh --message='This branch is for github pages thus wont have any meaningful commits!'"
   },
   "private": true,
   "dependencies": {

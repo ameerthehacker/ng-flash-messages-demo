@@ -5,3 +5,12 @@
 .btn {
     border-radius: 2em !important;
 }
+
+.ng-invalid[type=text] {
+    border: 1px solid #f00;
+}
+
+.error-field {
+    color: red;
+    font-size: small;
+}

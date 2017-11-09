@@ -13,18 +13,21 @@
           </h4>
         </div>
         <div class="panel-body">
-          <form class="form">
+          <form (submit)="onFlashFormSubmit()" [formGroup]="flashForm">
             <div class="form-group">
                 <label class="control-label" for="message">Message</label>
-                <input type="text" class="form-control" id="message" placeholder="Enter some message to be displayed...">
+                <input type="text" class="form-control" formControlName="message" id="message" placeholder="Enter some message to be displayed...">
+                <div *ngIf="message.invalid" class="error-field">
+                  message field is required
+                </div>
             </div>
             <div class="form-group">
                 <label class="control-label" for="timeout">Timeout</label>
-                <input type="text" class="form-control" id="timeout" placeholder="Enter time in ms, leave it blank to make it infinite">
+                <input type="text" class="form-control" formControlName="timeout" id="timeout" placeholder="Enter time in ms, leave it blank to make it infinite">
             </div>
             <div class="form-group">
                 <label class="control-label" for="type">Type</label>
-                <select class="form-control" id="type">
+                <select class="form-control" formControlName="type" id="type">
                   <option value="info">Info</option>
                   <option value="success">Success</option>
                   <option value="warning">Warning</option>
@@ -32,7 +35,17 @@
                 </select>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-success">Show Flash</button>
+                <div class="inline-radio">
+                  <label>
+                      <input type="radio" formControlName="dismissible" name="dismissible" value="yes"> Dismissible
+                  </label>
+                  <label>
+                      <input type="radio" formControlName="dismissible" name="dismissible" value="no"> Not dismissible
+                  </label>
+                </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success" [disabled]="flashForm.invalid">Show Flash</button>
             </div>
           </form>
         </div>

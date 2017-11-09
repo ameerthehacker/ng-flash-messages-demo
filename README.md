@@ -1,27 +1,15 @@
 # NgFlashMessagesDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
+This is a demo project for using the ng-flash-messages library
 
-## Development server
+![Demo GIF](./src/assets/images/demo.gif)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## More on ng-flash-messages-library
 
-## Code scaffolding
+You can install this this library by:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+npm install ng-flash-messages --save
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+You can read more on this library here: ![https://www.npmjs.com/package/ng-flash-messages](https://www.npmjs.com/package/ng-flash-messages)

@@ -1,6 +1,6 @@
 # NgFlashMessagesDemo
 
-This is a demo project for using the ng-flash-messages library.
+This is a demo project for using the ng-flash-messages library
 
 ![Demo GIF](./src/assets/images/demo.gif)
 

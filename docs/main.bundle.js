@@ -70,35 +70,35 @@ var AppComponent = (function () {
     AppComponent.prototype.ngOnInit = function () {
         this.flashForm = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormGroup */]({
             message: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]("Hey there i'm a flash message", __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* Validators */].required),
-            timeout: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('2000'),
-            type: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('info'),
-            dismissible: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('no')
+            timeout: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]("2000"),
+            type: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]("info"),
+            dismissible: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]("no")
         });
     };
     Object.defineProperty(AppComponent.prototype, "message", {
         get: function () {
-            return this.flashForm.get('message');
+            return this.flashForm.get("message");
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(AppComponent.prototype, "timeout", {
         get: function () {
-            return this.flashForm.get('timeout');
+            return this.flashForm.get("timeout");
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(AppComponent.prototype, "type", {
         get: function () {
-            return this.flashForm.get('type');
+            return this.flashForm.get("type");
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(AppComponent.prototype, "dismissible", {
         get: function () {
-            return this.flashForm.get('dismissible');
+            return this.flashForm.get("dismissible");
         },
         enumerable: true,
         configurable: true
@@ -108,7 +108,8 @@ var AppComponent = (function () {
             messages: [this.message.value],
             timeout: this.timeout.value,
             type: this.type.value,
-            dismissible: this.dismissible.value == 'yes' ? true : false
+            centerAlign: true,
+            dismissible: this.dismissible.value == "yes" ? true : false
         };
         this.ngFlashMessageService.showFlashMessage(flashMessage);
     };
@@ -116,7 +117,7 @@ var AppComponent = (function () {
 }());
 AppComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-root',
+        selector: "app-root",
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.scss")]
     }),
@@ -175,6 +176,23 @@ AppModule = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/environments/environment.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
+var environment = {
+    production: false
+};
+//# sourceMappingURL=environment.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/main.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -183,10 +201,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 
 
 
-if (true) {
+
+if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])

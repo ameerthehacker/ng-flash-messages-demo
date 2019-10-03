@@ -15,6 +15,8 @@ npm install ng-flash-messages --save
 See the live demo at:
 https://ameerthehacker.github.io/ng-flash-messages-demo/
 
-https://codesandbox.io/s/ng-flash-messages-demo-81uwb?fontsize=14&view=preview
+You can also view it up on CodeSandbox:
+
+[![Edit ng-flash-messages-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ng-flash-messages-demo-81uwb?fontsize=14&hidenavigation=1&view=preview)
 
 You can read more on this library here: https://www.npmjs.com/package/ng-flash-messages
